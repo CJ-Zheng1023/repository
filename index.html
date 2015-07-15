@@ -10,9 +10,12 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!--[if (lt IE 9) & (!IDMobile)]>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,9 +23,85 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <header role="banner">
+            <nav role="navigation" class="navbar navbar-static-top navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">project name</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">DownLoad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="css/images/1.jpg" alt="1.jpg" style="zoom: 2">
+                    </div>
+                    <div class="item">
+                        <img src="css/images/2.jpg" alt="2.jpg" style="zoom: 2">
+                    </div>
+                    <div class="item">
+                        <img src="css/images/3.jpg" alt="3.jpg" style="zoom: 2">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>welcome!</h2>
+                        <p>welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome </p>
+                        <p><a class="btn btn-primary pull-right" role="button">see more</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>welcome!</h2>
+                        <p>welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome </p>
+                        <p><a class="btn btn-primary pull-right" role="button">see more</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>welcome!</h2>
+                        <p>welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome welcome </p>
+                        <p><a class="btn btn-primary pull-right" role="button">see more</a></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer role="contentinfo">
+            <p><small>Copyright &copy; Company</small></p>
+        </footer>
+
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
