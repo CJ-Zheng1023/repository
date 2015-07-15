@@ -1,0 +1,12 @@
+.box-sizing(@boxmodel){
+  -webkit-box-sizing: @boxmodel;
+  -moz-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+
+.box{
+  .box-sizing(border-box);
+}
+.box-element{
+  .box-sizing(border-box);
+}
